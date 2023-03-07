@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vivid</string>
+
+    <string name="add_favorite">Add to Favorites List</string>
+    <string name="added_to_favorites">Added to Favorites List</string>
+    <string name="remove_favorite">Remove from Favorites List</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="web_search">Web Search</string>
+    <string name="search_hint">Search color or hex code</string>
+    <string name="search_colors">Search Colors</string>
+    <string name="remove_favorites_toast">Removed from Favorites List</string>
+    <string name="empty_favorites_listView_text">You have no favorites.</string>
+    <string name="no_search_app_installed">No search app installed</string>
+    <string name="undo">Undo</string>
+
+    <string-array name="brands">
+        <item>Behr</item>
+        <item>Benjamin Moore</item>
+        <item>Glidden</item>
+        <item>Sherwin-Williams</item>
+        <item>Valspar</item>
+    </string-array>
+
+</resources>

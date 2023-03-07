@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.color_list.ColorPickerFragment">
+
+    <item
+        android:id="@+id/menu_item_search_colors"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_colors"
+        app:iconTint="#61000000"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorites_title"
+        app:iconTint="#61000000"
+        app:showAsAction="ifRoom"/>
+
+</menu>

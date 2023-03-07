@@ -1,0 +1,21 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target 'Vivid' do
+  pod 'DZNEmptyDataSet' # For empty data tables
+  pod 'Fabric' # Needed by Crashlytics
+  pod 'Crashlytics' # For tracking app crashes
+  pod 'Toast-Swift' # Toasts like Android
+  pod 'Firebase/Core'
+end
+
+#post_install do |installer|
+#  installer.pods_project.targets.each do |target|
+#    if ['Toast-Swift'].include? target.name
+#      # Temporary until all libraries support the latest verison of Swift
+#      target.build_configurations.each do |config|
+#        config.build_settings['SWIFT_VERSION'] = '4.0'
+#      end
+#    end
+#  end
+#end

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Vivid/Brand+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Vivid/Brand+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Vivid/Color+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Vivid/Color+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Vivid.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

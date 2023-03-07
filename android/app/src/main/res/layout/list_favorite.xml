@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:elevation="@dimen/item_list_elevation"
+              android:foreground="?attr/selectableItemBackground"
+              android:orientation="horizontal">
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        tools:background="@android:color/holo_blue_dark"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/colorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Holo Blue"/>
+
+        <TextView
+            android:id="@+id/colorBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="16sp"
+            tools:text="Sherwin-Williams"/>
+
+    </LinearLayout>
+
+</LinearLayout>

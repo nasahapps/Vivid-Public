@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.nasahapps.vivid"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 25
+        versionName '2.3.2'
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+
+    packagingOptions {
+        exclude "META-INF/LICENSE.txt"
+        exclude "META-INF/NOTICE.txt"
+        exclude "META-INF/app_debug.kotlin_module"
+    }
+
+    lintOptions {
+        disable 'UnusedAttribute', 'HardcodedText', 'IconDensities', 'IconLocation',
+                'ContentDescription', 'GoogleAppIndexingWarning', 'AllowBackup', 'ParcelCreator'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+dependencies {
+    implementation "com.google.android.material:material:1.1.0-alpha09"
+    implementation "androidx.core:core-ktx:1.1.0-rc03"
+    implementation "androidx.appcompat:appcompat:1.1.0-rc01"
+    implementation "androidx.fragment:fragment-ktx:1.2.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.1.0-rc01"
+    implementation "androidx.paging:paging-runtime:2.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0-beta02"
+    implementation "androidx.room:room-ktx:2.1.0"
+    kapt "androidx.room:room-compiler:2.1.0"
+    implementation "androidx.viewpager2:viewpager2:1.0.0-beta02"
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation "com.google.code.gson:gson:2.8.5"
+}
+
+apply plugin: 'com.google.gms.google-services'
